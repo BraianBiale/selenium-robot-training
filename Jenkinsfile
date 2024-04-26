@@ -13,8 +13,12 @@ pipeline {
             python -m venv .venv
             . .venv/bin/activate
             pip install -r requirements.txt
-            robot --version
                 '''
+            }
+        }
+        stage('run robot test') {
+            steps {
+                sh 'robot ./tests/robot/login-page.robot'
             }
         }
     }
