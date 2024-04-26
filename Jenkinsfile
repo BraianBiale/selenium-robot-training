@@ -18,7 +18,10 @@ pipeline {
         }
         stage('run robot test') {
             steps {
-                sh 'robot ./tests/robot/login-page.robot'
+                sh '''
+                source .venv/bin/activate
+                robot ./tests/robot/login-page.robot
+                '''
             }
         }
     }
