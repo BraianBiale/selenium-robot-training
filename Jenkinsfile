@@ -9,7 +9,12 @@ pipeline {
         }
         stage('install requirements') {
             steps {
-                sh 'python -m pip install -r requirements.txt'
+                sh '''
+            python -m venv .venv
+            . .venv/bin/activate
+            pip install -r requirements.txt
+            pytest -v
+                '''
             }
         }
     }
