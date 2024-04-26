@@ -6,6 +6,11 @@ pipeline {
             steps {
                 sh 'python --version'
             }
+        },
+        stage('install requirements') {
+            steps {
+                sh 'pip install -r requirements.txt'
+            }
         }
     }
 }
