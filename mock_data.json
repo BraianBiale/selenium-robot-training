@@ -1,0 +1,16 @@
+{
+  "valid_login_data": {
+    "username": "testuser",
+    "password": "Testuser1#"
+  },
+  "invalid_login_data": {
+    "username": "testuser",
+    "password": "otheruser"
+  },
+  "already_register_data": {
+    "name": "Test",
+    "username": "testuser",
+    "email": "testuser@gmail.com",
+    "password": "Testuser1#"
+  }
+}
