@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Library    ../../.venv/lib/python3.9/site-packages/robot/libraries/OperatingSystem.py
+Library  OperatingSystem
 
 *** Test Cases ***
 Succesfull Login
